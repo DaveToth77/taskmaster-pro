@@ -15,11 +15,15 @@
 
   <div class="row min-vh-100 no-gutters">
     <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
-      <h1 class="text-center"><span class="oi oi-task d-inline d-lg-none"></span>
-        Taskmaster Pro Edition</h1>
-      <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
-        Task</button>
-      <button id="remove-tasks" class="btn btn-block btn-danger mb-2 mb-md-4"></span>Delete All Tasks</button>
+      <div>
+        <h1 class="text-center"><span class="oi oi-task d-inline d-lg-none"></span>
+          Taskmaster Pro Edition</h1>
+        <div class="ml-md-auto w-100 w-md-auto">
+          <button id="create-task" class="btn btn-block btn-success" data-toggle="modal"
+            data-target="#task-form-modal">Add Task</button>
+          <button id="remove-tasks" class="btn btn-block btn-danger mb-2 mb-md-4"></span>Delete All Tasks</button>
+        </div>
+      </div>
       <p class="mt-auto d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas
         architecto ipsa
         excepturi aut non laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis
@@ -27,52 +31,52 @@
     </header>
     <main class="col-12 col-lg-9 d-flex flex-column">
       <div class="m-5 row justify-content-around">
-        <!--  -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light d-flex align-items-center">
-              To Do
-            </h4>
-            <ul id="list-toDo" class="list-group list-group-flush">
-            </ul>
+          <!--  -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                To Do
+              </h4>
+              <ul id="list-toDo" class="list-group list-group-flush">
+              </ul>
+            </div>
           </div>
-        </div>
-        <!--  -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light d-flex align-items-center">
-              In Progress
-            </h4>
-            <ul id="list-inProgress" class="list-group list-group-flush">
-            </ul>
+          <!--  -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                In Progress
+              </h4>
+              <ul id="list-inProgress" class="list-group list-group-flush">
+              </ul>
+            </div>
           </div>
-        </div>
-        <!--  -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light d-flex align-items-center">
-              In Review
-            </h4>
-            <ul id="list-inReview" class="list-group list-group-flush">
-            </ul>
+          <!--  -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                In Review
+              </h4>
+              <ul id="list-inReview" class="list-group list-group-flush">
+              </ul>
+            </div>
           </div>
-        </div>
-        <!--  -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light d-flex align-items-center">
-              Done
-            </h4>
-            <ul id="list-done" class="list-group list-group-flush">
-            </ul>
+          <!--  -->
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
+            <div class="card">
+              <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                Done
+              </h4>
+              <ul id="list-done" class="list-group list-group-flush">
+              </ul>
+            </div>
           </div>
+      </div>
+      <div class="mt-auto" id="trash">
+        <div class="w-100 bg-danger p-3 text-center text-light display-4">
+          Drop Here to Remove.
         </div>
       </div>
-      <footer class="mt-auto" id="trash">
-        <div class="w-100 bg-danger p-3 text-center text-light display-4 bottom-trash">
-          <span class="oi oi-trash mx-auto mb-4"> </span> Drop Here to Remove.
-        </div>
-      </footer>
     </main>
   </div>
 
@@ -112,6 +116,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
